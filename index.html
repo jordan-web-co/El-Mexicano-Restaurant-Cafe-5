@@ -11,14 +11,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="styles.css" />
   <script defer data-domain="CLIENTDOMAIN.com" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
-  <div class="site-bg"></div>
+  <div class="bg-layer bg-layer-1"></div>
+  <div class="bg-layer bg-layer-2"></div>
+  <div class="texture-overlay"></div>
 
   <header class="site-header">
     <div class="container nav">
@@ -34,8 +36,9 @@
         <a href="#about">About</a>
         <a href="#featured">Favorites</a>
         <a href="#menu-categories">Menu</a>
+        <a href="#gallery">Gallery</a>
         <a href="#reviews">Reviews</a>
-        <a href="#location">Location</a>
+        <a href="#location">Visit</a>
       </nav>
 
       <a
@@ -55,11 +58,19 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <div class="eyebrow">Brooklyn Mexican Comfort Food</div>
-          <h1>Food that looks warm, feels local, and makes you want to order now.</h1>
+          <p class="hero-kicker">Bold flavor. Warm plates. Neighborhood energy.</p>
+
+          <h1>
+            A richer, more inviting
+            Mexican dining experience
+            before the first bite.
+          </h1>
+
           <p class="hero-text">
-            Tacos, enchiladas, burritos, guacamole, breakfast plates, and more —
-            served with the kind of neighborhood energy that keeps people coming back.
-            This version is built to feel inviting, flavorful, and instantly craveable.
+            Tacos, enchiladas, burritos, guacamole, breakfast plates, and
+            comforting favorites served with the kind of warmth that makes people
+            want to come back. This homepage is designed to feel flavorful,
+            elevated, and impossible to scroll past hungry.
           </p>
 
           <div class="hero-actions">
@@ -69,16 +80,6 @@
               onclick="plausible('Call Click')"
             >
               Call Now
-            </a>
-
-            <a
-              class="btn btn-secondary"
-              href="https://www.google.com/maps/search/?api=1&query=230+Hoyt+St+Brooklyn+NY+11217"
-              target="_blank"
-              rel="noopener noreferrer"
-              onclick="plausible('Directions Click')"
-            >
-              Get Directions
             </a>
 
             <a
@@ -93,6 +94,16 @@
 
             <a
               class="btn btn-secondary"
+              href="https://www.google.com/maps/search/?api=1&query=230+Hoyt+St+Brooklyn+NY+11217"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="plausible('Directions Click')"
+            >
+              Get Directions
+            </a>
+
+            <a
+              class="btn btn-secondary"
               href="#featured"
               onclick="plausible('Menu View')"
             >
@@ -101,234 +112,296 @@
           </div>
 
           <div class="hero-pills">
-            <span>4.7★ on DoorDash</span>
+            <span>4.7★ DoorDash rating</span>
             <span>100+ ratings</span>
             <span>230 Hoyt St, Brooklyn</span>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="hero-photo-card hero-main-photo">
+        <div class="hero-editorial">
+          <article class="hero-feature-card">
             <img
-              src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=1200&q=80"
-              alt="Mexican tacos with lime and salsa"
+              src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=1400&q=80"
+              alt="Mexican tacos plated with lime and salsa"
             />
-            <div class="photo-overlay">
-              <div class="overlay-badge">Top picks</div>
-              <h2>Enchiladas • Taco • Burrito Al Mexicano</h2>
-              <p>Fast favorites, comforting plates, and bold flavor.</p>
+            <div class="hero-feature-overlay">
+              <span class="overlay-label">Featured favorites</span>
+              <h2>Enchiladas, tacos, burritos, and comfort food with real warmth.</h2>
+              <p>
+                Food-first design that makes the restaurant feel alive, local,
+                and worth ordering from immediately.
+              </p>
             </div>
-          </div>
+          </article>
 
-          <div class="hero-stats">
-            <div class="stat-card">
-              <span class="stat-label">Most liked</span>
+          <div class="hero-side-stack">
+            <article class="hero-side-card">
+              <span class="mini-label">Most liked</span>
               <strong>Enchiladas</strong>
-            </div>
-            <div class="stat-card">
-              <span class="stat-label">Easy first order</span>
+              <p>Saucy, comforting, and built for hero placement.</p>
+            </article>
+
+            <article class="hero-side-card">
+              <span class="mini-label">Easy first order</span>
               <strong>Taco — $3.99</strong>
-            </div>
-            <div class="stat-card">
-              <span class="stat-label">Crowd favorite</span>
-              <strong>Guacamole &amp; Chips</strong>
-            </div>
+              <p>Accessible, familiar, and perfect for fast conversion.</p>
+            </article>
+
+            <article class="hero-side-card accent-card">
+              <span class="mini-label">Neighborhood feel</span>
+              <strong>Warm visuals. Clear actions. Real appetite.</strong>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bottom-band">
+        <div class="container hero-bottom-band-inner">
+          <div>
+            <span class="band-label">Customer favorites</span>
+            <p>Enchiladas • Taco • Burrito Al Mexicano • Guacamole &amp; Chips • Nachos</p>
+          </div>
+          <div>
+            <span class="band-label">Built to drive</span>
+            <p>Calls • Directions • Online Orders • Menu Views</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-tight" id="about">
+    <section class="section split-transition" id="about">
       <div class="container">
-        <div class="section-heading centered">
-          <span class="eyebrow">About the vibe</span>
-          <h2>A warmer, hungrier, more inviting restaurant homepage.</h2>
+        <div class="section-heading centered editorial-heading">
+          <span class="eyebrow">About the experience</span>
+          <h2>Designed to feel less like a listing and more like a place you want to eat from.</h2>
           <p>
-            Instead of feeling like a plain listing, this version uses richer color,
-            layered backgrounds, stronger food photography, and simpler actions so the
-            restaurant feels more alive the second someone lands on it.
+            The art direction here leans warmer, richer, and more editorial — using layered imagery,
+            elegant type, premium spacing, and stronger hierarchy to make the restaurant feel memorable.
           </p>
         </div>
 
-        <div class="about-grid">
-          <article class="info-card">
-            <h3>Built around appetite</h3>
+        <div class="editorial-info-grid">
+          <article class="info-panel">
+            <span class="panel-number">01</span>
+            <h3>Food-first storytelling</h3>
             <p>
-              The homepage leads with food-first visuals, quick trust signals,
-              and direct ordering actions rather than making visitors work to figure out what to do next.
+              Instead of treating the homepage like a menu dump, this layout gives dishes room to seduce
+              with larger photography, tighter copy, and more intentional framing.
             </p>
           </article>
 
-          <article class="info-card">
-            <h3>Inspired by stronger restaurant sites</h3>
+          <article class="info-panel">
+            <span class="panel-number">02</span>
+            <h3>Upscale without losing warmth</h3>
             <p>
-              The layout borrows the best parts of high-performing NYC Latin restaurant sites:
-              bold hero media, limited navigation, instant CTA buttons, and mood-heavy storytelling.
+              The tone is elevated, but still approachable. It feels like a neighborhood favorite with
+              stronger visual confidence instead of an over-designed luxury concept.
             </p>
           </article>
 
-          <article class="info-card">
-            <h3>Still practical for a neighborhood spot</h3>
+          <article class="info-panel">
+            <span class="panel-number">03</span>
+            <h3>Built to convert on mobile</h3>
             <p>
-              It stays grounded in what this business likely needs most:
-              calls, directions, mobile orders, and a stronger first impression than an app listing alone.
+              Every visual upgrade still supports the main goal: getting hungry visitors to call,
+              get directions, and order quickly without friction.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="featured">
+    <section class="section rich-transition" id="featured">
       <div class="container">
         <div class="section-heading">
           <span class="eyebrow">Featured favorites</span>
-          <h2>What people are already clicking on.</h2>
+          <h2>Composed like signature dishes, not just menu items.</h2>
           <p>
-            These cards are based on the live delivery listing and presented in a way that feels more premium and appetizing.
+            These cards are designed with better image hierarchy, stronger contrast, and more appetite appeal
+            so the food feels premium and craveable.
           </p>
         </div>
 
-        <div class="featured-grid">
-          <article class="dish-card dish-card-large">
-            <div class="dish-image">
+        <div class="signature-grid">
+          <article class="signature-card signature-card-xl">
+            <div class="signature-media">
               <img
-                src="https://images.unsplash.com/photo-1600335895229-6e75511892c8?auto=format&fit=crop&w=1200&q=80"
-                alt="Loaded burrito with salsa"
+                src="https://images.unsplash.com/photo-1600335895229-6e75511892c8?auto=format&fit=crop&w=1400&q=80"
+                alt="Large burrito plated with salsa and garnish"
               />
             </div>
-            <div class="dish-copy">
+            <div class="signature-copy">
               <span class="dish-tag">Most liked</span>
               <h3>Enchiladas</h3>
-              <p>Comforting, saucy, and one of the strongest anchors for the menu.</p>
-              <div class="dish-price">$15.99</div>
+              <p>
+                Comforting, rich, and easy to picture as the centerpiece of the page —
+                exactly the kind of item that makes a restaurant feel like it knows what it does best.
+              </p>
+              <div class="signature-meta">
+                <span class="dish-price">$15.99</span>
+                <span class="dish-note">Customer favorite</span>
+              </div>
             </div>
           </article>
 
-          <article class="dish-card">
-            <span class="dish-tag">Popular</span>
-            <h3>Taco</h3>
-            <p>Fast, approachable, and a perfect item to make the page feel affordable and easy.</p>
-            <div class="dish-price">$3.99</div>
+          <article class="signature-card">
+            <div class="signature-copy compact">
+              <span class="dish-tag">Popular</span>
+              <h3>Taco</h3>
+              <p>Small entry price, high click appeal, and perfect for someone ordering on impulse.</p>
+              <div class="signature-meta">
+                <span class="dish-price">$3.99</span>
+              </div>
+            </div>
           </article>
 
-          <article class="dish-card">
-            <span class="dish-tag">Favorite</span>
-            <h3>Burrito Al Mexicano</h3>
-            <p>Hearty and filling, exactly the kind of signature item that should show up above the fold.</p>
-            <div class="dish-price">$13.00</div>
+          <article class="signature-card">
+            <div class="signature-copy compact">
+              <span class="dish-tag">Favorite</span>
+              <h3>Burrito Al Mexicano</h3>
+              <p>Hearty and filling with the kind of familiarity that makes people trust the order.</p>
+              <div class="signature-meta">
+                <span class="dish-price">$13.00</span>
+              </div>
+            </div>
           </article>
 
-          <article class="dish-card">
-            <span class="dish-tag">Add-on</span>
-            <h3>Guacamole &amp; Chips</h3>
-            <p>Bright, visual, and ideal for helping the whole site feel fresh and craveable.</p>
-            <div class="dish-price">$10.99</div>
+          <article class="signature-card with-image">
+            <div class="signature-media short-media">
+              <img
+                src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=1200&q=80"
+                alt="Guacamole and chips served on a table"
+              />
+            </div>
+            <div class="signature-copy compact">
+              <span class="dish-tag">Add-on</span>
+              <h3>Guacamole &amp; Chips</h3>
+              <p>Bright, fresh, and the kind of visual item that helps the whole menu feel more alive.</p>
+              <div class="signature-meta">
+                <span class="dish-price">$10.99</span>
+              </div>
+            </div>
           </article>
 
-          <article class="dish-card">
-            <span class="dish-tag">Classic</span>
-            <h3>Nachos</h3>
-            <p>A recognizable crowd-pleaser that broadens the appeal for groups and casual orders.</p>
-            <div class="dish-price">$14.00</div>
+          <article class="signature-card accent-surface">
+            <div class="signature-copy compact">
+              <span class="dish-tag">Classic</span>
+              <h3>Nachos</h3>
+              <p>A recognizable crowd-pleaser that broadens the restaurant’s appeal for groups and casual orders.</p>
+              <div class="signature-meta">
+                <span class="dish-price">$14.00</span>
+              </div>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section alt-section" id="menu-categories">
+    <section class="section soft-break" id="menu-categories">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading editorial-heading">
           <span class="eyebrow">Menu range</span>
-          <h2>More than just a few best sellers.</h2>
+          <h2>Enough variety to feel like a real neighborhood staple.</h2>
           <p>
-            The delivery listing shows a broader mix of categories, which helps the restaurant feel fuller and more established.
+            The menu should feel broad, comforting, and useful — from breakfast to platters to lighter options.
           </p>
         </div>
 
-        <div class="categories-grid">
+        <div class="categories-grid upscale-categories">
           <article class="category-card">
+            <span class="category-line"></span>
             <h3>Antojitos Mexicanos</h3>
-            <p>Street-style favorites and snackable classics that make the menu feel authentic and approachable.</p>
+            <p>Street-style favorites and familiar classics that make the menu feel authentic and approachable.</p>
           </article>
 
           <article class="category-card">
+            <span class="category-line"></span>
             <h3>Platters &amp; Bistecs</h3>
-            <p>More filling entrees for lunch and dinner traffic when people want a complete meal.</p>
+            <p>More filling entrees for lunch and dinner traffic when customers want a complete meal.</p>
           </article>
 
           <article class="category-card">
+            <span class="category-line"></span>
             <h3>Breakfast</h3>
-            <p>A major plus for a neighborhood restaurant site because it signals all-day usefulness.</p>
+            <p>A strong signal that the restaurant fits everyday routines, not just one-off delivery orders.</p>
           </article>
 
           <article class="category-card">
+            <span class="category-line"></span>
             <h3>Vegetarian, Salads &amp; Desserts</h3>
-            <p>Extra range that makes the business feel flexible for families, groups, and repeat orders.</p>
+            <p>Extra flexibility for families, repeat customers, and mixed-group ordering.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="gallery">
+    <section class="section gallery-section" id="gallery">
       <div class="container">
         <div class="section-heading">
-          <span class="eyebrow">Gallery</span>
-          <h2>Make the page feel like the food is already on the table.</h2>
+          <span class="eyebrow">Atmosphere & appetite</span>
+          <h2>Give the page the same warmth the food should have.</h2>
           <p>
-            Warm photography, close-up plating, and color are what make restaurant sites inviting.
+            Better restaurant sites make you imagine the textures, the heat, the color, and the comfort immediately.
           </p>
         </div>
 
-        <div class="gallery-grid">
-          <figure class="gallery-item gallery-item-lg">
+        <div class="editorial-gallery">
+          <figure class="gallery-card gallery-card-tall">
             <img
               src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=1200&q=80"
-              alt="Mexican plated meal"
+              alt="Mexican plated meal on a table"
             />
           </figure>
-          <figure class="gallery-item">
+
+          <figure class="gallery-card">
             <img
-              src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=80"
+              src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=1000&q=80"
               alt="Fresh restaurant drinks"
             />
           </figure>
-          <figure class="gallery-item">
+
+          <figure class="gallery-card">
             <img
-              src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=900&q=80"
-              alt="Restaurant dining atmosphere"
+              src="https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&w=1000&q=80"
+              alt="Shared Mexican dishes"
             />
           </figure>
-          <figure class="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=900&q=80"
-              alt="Chips and dip"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&w=900&q=80"
-              alt="Mexican shared plates"
-            />
-          </figure>
+
+          <article class="gallery-copy-card">
+            <span class="mini-label">Editorial direction</span>
+            <h3>Less flat. More flavor.</h3>
+            <p>
+              The mix of serif typography, layered backgrounds, richer cards, and image-led sections
+              makes the site feel like a real restaurant brand instead of a basic template.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section alt-section" id="reviews">
+    <section class="section rich-transition" id="reviews">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading centered editorial-heading">
           <span class="eyebrow">Social proof</span>
-          <h2>People should feel comfortable ordering right away.</h2>
+          <h2>Make first-time customers feel like ordering is the easy decision.</h2>
           <p>
-            Trust signals matter a lot on restaurant sites, especially when someone has never ordered before.
+            Reviews work best when they feel integrated into the atmosphere of the page, not dropped in as an afterthought.
           </p>
         </div>
 
-        <div class="reviews-grid">
+        <div class="reviews-grid upscale-reviews">
           <article class="review-card">
             <div class="stars">★★★★★</div>
             <p>“Super yummy birria tacos and beef tostadas. My favorites. I also love their horchata.”</p>
             <strong>DoorDash customer</strong>
+          </article>
+
+          <article class="review-card featured-review">
+            <span class="mini-label">Why this matters</span>
+            <p>
+              A strong restaurant page should make people feel trust and hunger at the same time —
+              the visuals pull them in, the reviews remove hesitation.
+            </p>
           </article>
 
           <article class="review-card">
@@ -346,13 +419,13 @@
       </div>
     </section>
 
-    <section class="section" id="location">
+    <section class="section location-section" id="location">
       <div class="container location-grid">
         <div class="location-copy">
-          <span class="eyebrow">Location &amp; contact</span>
-          <h2>Everything someone needs to decide in one place.</h2>
+          <span class="eyebrow">Visit & contact</span>
+          <h2>Everything someone needs to order or stop by.</h2>
           <p>
-            Simple, direct, and mobile-friendly — exactly how a neighborhood restaurant should feel online.
+            Direct, warm, and easy to use — the way a neighborhood restaurant should feel online.
           </p>
 
           <div class="contact-stack">
@@ -403,7 +476,7 @@
           </div>
         </div>
 
-        <div class="map-card">
+        <div class="map-card premium-map-card">
           <iframe
             title="Map to El mexicano restaurante & cafe 5"
             loading="lazy"
@@ -419,10 +492,10 @@
       <div class="container">
         <div class="final-cta-card">
           <span class="eyebrow">Final CTA</span>
-          <h2>Hungry now? Make the next step obvious.</h2>
+          <h2>Hungry now? The next step should feel effortless.</h2>
           <p>
-            A restaurant site should feel effortless: good food, strong visuals,
-            and clear actions that turn attention into an order.
+            Strong restaurant design is not just about looking good. It is about making the food feel irresistible
+            and the decision feel immediate.
           </p>
 
           <div class="hero-actions final-actions">
