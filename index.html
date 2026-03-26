@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Mexicano Restaurant & Cafe 5 | Brooklyn, NY</title>
+  <meta name="description" content="Authentic Mexican favorites in Brooklyn. Tacos, burritos, breakfast platters, aguas frescas, and more at El Mexicano Restaurant & Cafe 5." />
+  <script defer data-domain="CLIENTDOMAIN.com" src="https://plausible.io/js/script.js"></script>
+  <style>
+    :root {
+      --bg: #0f0b08;
+      --bg-soft: #18120d;
+      --card: rgba(255,255,255,0.06);
+      --card-strong: rgba(255,255,255,0.09);
+      --text: #f8f3ee;
+      --muted: #d5c6b8;
+      --gold: #f2b544;
+      --gold-dark: #d89a2d;
+      --red: #b33a2b;
+      --green: #4f7b4b;
+      --border: rgba(255,255,255,0.12);
+      --shadow: 0 20px 50px rgba(0,0,0,0.28);
+      --radius: 22px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(242,181,68,0.10), transparent 28%),
+        radial-gradient(circle at top right, rgba(179,58,43,0.12), transparent 22%),
+        linear-gradient(180deg, #120d09 0%, #0f0b08 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(100% - 2rem, var(--max));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 88px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.45rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(242,181,68,0.12);
+      border: 1px solid rgba(242,181,68,0.22);
+      color: #ffd38a;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 2.25rem;
+    }
+
+    .section-head h2 {
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      line-height: 1.05;
+      margin: 1rem 0 0.85rem;
+      letter-spacing: -0.04em;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      background: rgba(15,11,8,0.75);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .brand-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--gold), #ffcf73);
+      color: #1a1209;
+      font-weight: 900;
+      box-shadow: 0 10px 24px rgba(242,181,68,0.28);
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.9rem 1.2rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--gold), #ffd27a);
+      color: #1a1209;
+      font-weight: 800;
+      border: none;
+      box-shadow: 0 16px 30px rgba(242,181,68,0.22);
+    }
+
+    .hero {
+      padding: 80px 0 52px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero-copy h1 {
+      margin: 1rem 0 1rem;
+      font-size: clamp(2.9rem, 7vw, 5.8rem);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+      max-width: 11ch;
+    }
+
+    .hero-copy p {
+      max-width: 640px;
+      color: var(--muted);
+      font-size: 1.08rem;
+      margin: 0 0 1.5rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      min-height: 52px;
+      padding: 0 1.25rem;
+      border-radius: 999px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      transition: transform 0.18s ease, opacity 0.18s ease, border-color 0.18s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      opacity: 0.96;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold), #ffd27a);
+      color: #1a1209;
+      box-shadow: 0 18px 34px rgba(242,181,68,0.2);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+      border-color: rgba(255,255,255,0.12);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .hero-meta .pill {
+      padding: 0.7rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.09);
+    }
+
+    .hero-card {
+      position: relative;
+      min-height: 560px;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background:
+        linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.6)),
+        url('https://images.unsplash.com/photo-1565299585323-38174c4a6471?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      display: flex;
+      align-items: flex-end;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(14,10,7,0.05) 0%, rgba(14,10,7,0.82) 82%);
+    }
+
+    .hero-card-content {
+      position: relative;
+      z-index: 1;
+      padding: 1.5rem;
+      width: 100%;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.85rem;
+      margin-top: 1rem;
+    }
+
+    .stat {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 1rem;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.15rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .stat span {
+      color: #eadccf;
+      font-size: 0.92rem;
+    }
+
+    .about-grid,
+    .contact-grid,
+    .final-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .about-card {
+      padding: 2rem;
+    }
+
+    .about-card h3 {
+      margin: 0 0 0.85rem;
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+    }
+
+    .about-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+    }
+
+    .feature-card {
+      padding: 1.25rem;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.04));
+      border: 1px solid rgba(255,255,255,0.09);
+      box-shadow: var(--shadow);
+    }
+
+    .feature-card .tag {
+      display: inline-block;
+      padding: 0.4rem 0.65rem;
+      border-radius: 999px;
+      background: rgba(79,123,75,0.16);
+      color: #b2d7ae;
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+    }
+
+    .feature-card h3 {
+      margin: 0 0 0.45rem;
+      font-size: 1.15rem;
+    }
+
+    .feature-card p {
+      color: var(--muted);
+      font-size: 0.96rem;
+      margin: 0 0 0.85rem;
+    }
+
+    .feature-card .price {
+      color: #ffd38a;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      grid-template-rows: 240px 240px;
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: var(--shadow);
+      min-height: 220px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.01);
+    }
+
+    .gallery-item:first-child {
+      grid-row: 1 / span 2;
+    }
+
+    .gallery-item .overlay {
+      position: absolute;
+      inset: auto 0 0 0;
+      padding: 1rem;
+      background: linear-gradient(180deg, transparent, rgba(0,0,0,0.7));
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .review-card {
+      padding: 1.5rem;
+    }
+
+    .review-card .stars {
+      color: #ffd27a;
+      letter-spacing: 0.14em;
+      margin-bottom: 0.85rem;
+      font-size: 0.92rem;
+    }
+
+    .review-card p {
+      color: var(--muted);
+      margin: 0 0 1rem;
+    }
+
+    .review-card strong {
+      display: block;
+      font-size: 0.96rem;
+    }
+
+    .contact-card {
+      padding: 2rem;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .contact-item {
+      padding: 1rem 1.1rem;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .contact-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-item strong {
+      font-size: 1rem;
+    }
+
+    .hours {
+      display: grid;
+      gap: 0.7rem;
+      margin-top: 1rem;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      color: var(--muted);
+    }
+
+    .hours-row strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .map-wrap {
+      overflow: hidden;
+      border-radius: 24px;
+      min-height: 100%;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: var(--shadow);
+      background: #16110d;
+    }
+
+    .map-wrap iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 520px;
+      border: 0;
+      filter: grayscale(1) contrast(1.05);
+    }
+
+    .final-cta {
+      padding: 2rem;
+      background:
+        radial-gradient(circle at top right, rgba(242,181,68,0.16), transparent 30%),
+        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.05));
+    }
+
+    .final-cta h2 {
+      margin: 0 0 0.8rem;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+
+    .final-cta p {
+      margin: 0 0 1.5rem;
+      max-width: 640px;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .footer {
+      padding: 1.4rem 0 2rem;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 1.25rem;
+    }
+
+    @media (max-width: 1080px) {
+      .hero-grid,
+      .about-grid,
+      .contact-grid,
+      .final-grid,
+      .feature-grid,
+      .reviews-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 220px);
+      }
+
+      .gallery-item:first-child {
+        grid-row: auto;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .nav {
+        flex-wrap: wrap;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid,
+      .final-grid,
+      .reviews-grid,
+      .feature-grid,
+      .gallery-grid,
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 56px;
+      }
+
+      .hero-card {
+        min-height: 420px;
+      }
+
+      .gallery-grid {
+        grid-template-rows: repeat(4, 220px);
+      }
+
+      .section {
+        padding: 72px 0;
+      }
+
+      .map-wrap iframe {
+        min-height: 380px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#top" class="brand">
+        <div class="brand-badge">EM</div>
+        <div class="brand-text">
+          El Mexicano
+          <span>Restaurant & Cafe 5</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#menu">Featured</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#location">Location</a>
+      </nav>
+
+      <a
+        class="nav-cta"
+        href="tel:+17185763804"
+        onclick="plausible('Call Click')"
+      >
+        Call Now
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Brooklyn Mexican Favorites</div>
+          <h1>Bold flavor, real comfort, neighborhood feel.</h1>
+          <p>
+            From tacos and burritos to breakfast platters and aguas frescas,
+            El Mexicano Restaurant & Cafe 5 brings authentic, satisfying Mexican
+            favorites to Hoyt Street with the kind of food people come back for.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              class="btn btn-primary"
+              href="tel:+17185763804"
+              onclick="plausible('Call Click')"
+            >
+              Call Now
+            </a>
+
+            <a
+              class="btn btn-secondary"
+              href="https://www.google.com/maps/search/?api=1&query=230+Hoyt+Street+Brooklyn+NY+11217"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="plausible('Directions Click')"
+            >
+              Get Directions
+            </a>
+
+            <a
+              class="btn btn-secondary"
+              href="https://www.ubereats.com/store/el-mexicano-restaurant-%26-cafe-5/qZaVLWZ9UqWVvAwE2YwlEg"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="plausible('Order Click')"
+            >
+              Order Online
+            </a>
+
+            <a
+              class="btn btn-secondary"
+              href="#menu"
+              onclick="plausible('Menu View')"
+            >
+              View Menu
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="pill">230 Hoyt Street, Brooklyn, NY 11217</div>
+            <div class="pill">Open daily</div>
+            <div class="pill">4.8-rated delivery listing</div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-content">
+            <div class="eyebrow">Popular Picks</div>
+            <div class="hero-stats">
+              <div class="stat">
+                <strong>Taco Al Mexicano</strong>
+                <span>Neighborhood favorite</span>
+              </div>
+              <div class="stat">
+                <strong>Burrito al Mexicano</strong>
+                <span>Hearty, classic, satisfying</span>
+              </div>
+              <div class="stat">
+                <strong>Aguas Frescas</strong>
+                <span>Fresh and refreshing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">About</div>
+          <h2>A local spot for everyday cravings and comfort classics.</h2>
+          <p>
+            Designed to feel warm, approachable, and easy to order from, this
+            landing page puts the focus on what matters most: the food, the
+            convenience, and getting hungry customers to call, visit, or order.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card card">
+            <h3>Authentic flavor with an easy everyday feel</h3>
+            <p>
+              El Mexicano Restaurant & Cafe 5 feels like the kind of neighborhood
+              place people rely on for tacos, breakfast, plates, and quick comfort
+              food. The website leans into that with a modern look that still feels
+              grounded, familiar, and local.
+            </p>
+          </div>
+
+          <div class="about-card card">
+            <h3>Built to convert visitors into orders</h3>
+            <p>
+              The structure is designed around action: clear ordering buttons,
+              menu highlights, real-world hours, a strong location section, and
+              mobile-friendly calls-to-action that make it simple for customers to
+              decide fast.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Featured Offerings</div>
+          <h2>Customer favorites worth putting front and center.</h2>
+          <p>
+            These highlights are based on the restaurant’s public delivery/menu listings
+            and presented in a format that feels premium and easy to scan.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="tag">Popular</div>
+            <h3>Grilled Chicken Breast</h3>
+            <p>Simple, filling, and one of the most-liked menu items.</p>
+            <div class="price">From $14.00</div>
+          </div>
+
+          <div class="feature-card">
+            <div class="tag">Best Seller</div>
+            <h3>Burrito al Mexicano</h3>
+            <p>A hearty favorite that’s easy to feature for lunch and dinner traffic.</p>
+            <div class="price">From $13.00</div>
+          </div>
+
+          <div class="feature-card">
+            <div class="tag">Top Tacos</div>
+            <h3>Taco Al Mexicano</h3>
+            <p>Three-piece taco favorite that deserves hero placement.</p>
+            <div class="price">From $13.99</div>
+          </div>
+
+          <div class="feature-card">
+            <div class="tag">Classic</div>
+            <h3>Huaraches</h3>
+            <p>Traditional, eye-catching, and a great item for food photography.</p>
+            <div class="price">From $6.99</div>
+          </div>
+
+          <div class="feature-card">
+            <div class="tag">Fresh</div>
+            <h3>Aguas Frescas</h3>
+            <p>Perfect add-on item to increase average order value and visual appeal.</p>
+            <div class="price">From $4.00</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Gallery</div>
+          <h2>Food-forward visuals that make the craving immediate.</h2>
+          <p>
+            A restaurant site should feel delicious in seconds. This gallery layout is
+            built to showcase tacos, plates, drinks, and atmosphere in a more premium way.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=1200&q=80" alt="Mexican taco platter" />
+            <div class="overlay">Signature tacos and plates</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1600335895229-6e75511892c8?auto=format&fit=crop&w=900&q=80" alt="Burrito and salsa" />
+            <div class="overlay">Fresh, colorful ingredients</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=900&q=80" alt="Mexican breakfast plate" />
+            <div class="overlay">Breakfast favorites</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=80" alt="Aguas frescas drinks" />
+            <div class="overlay">Refreshing drinks and extras</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=900&q=80" alt="Restaurant dining ambiance" />
+            <div class="overlay">Warm neighborhood energy</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Social Proof</div>
+          <h2>Real praise helps hungry customers decide faster.</h2>
+          <p>
+            These review snippets are adapted from public delivery listing feedback and
+            help give the site credibility right away.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card card">
+            <div class="stars">★★★★★</div>
+            <p>Fresh, well-packaged, tasty. My go-to in Brooklyn.</p>
+            <strong>— Recent customer review</strong>
+          </div>
+
+          <div class="review-card card">
+            <div class="stars">★★★★★</div>
+            <p>Everything is beautifully packaged and fresh.</p>
+            <strong>— Delivery customer</strong>
+          </div>
+
+          <div class="review-card card">
+            <div class="stars">★★★★★</div>
+            <p>Best tacos I’ve ever had — amazing taste and value.</p>
+            <strong>— Happy customer</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="location">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Location & Contact</div>
+          <h2>Make it easy to visit, call, or order in one tap.</h2>
+          <p>
+            This section is designed to remove friction and capture intent right when
+            someone is ready to decide.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card card">
+            <h3 style="margin:0;font-size:1.55rem;letter-spacing:-0.03em;">Visit El Mexicano Restaurant & Cafe 5</h3>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <span>Address</span>
+                <strong>230 Hoyt Street, Brooklyn, NY 11217</strong>
+              </div>
+
+              <div class="contact-item">
+                <span>Phone</span>
+                <strong><a href="tel:+17185763804" onclick="plausible('Call Click')">(718) 576-3804</a></strong>
+              </div>
+
+              <div class="contact-item">
+                <span>Order Online</span>
+                <strong>
+                  <a href="https://www.ubereats.com/store/el-mexicano-restaurant-%26-cafe-5/qZaVLWZ9UqWVvAwE2YwlEg" target="_blank" rel="noopener noreferrer" onclick="plausible('Order Click')">
+                    Open delivery page
+                  </a>
+                </strong>
+              </div>
+            </div>
+
+            <div class="hours">
+              <div class="hours-row"><span>Monday - Tuesday</span><strong>10:00 AM - 8:30 PM</strong></div>
+              <div class="hours-row"><span>Wednesday - Friday</span><strong>10:00 AM - 9:30 PM</strong></div>
+              <div class="hours-row"><span>Saturday</span><strong>10:30 AM - 9:30 PM</strong></div>
+              <div class="hours-row"><span>Sunday</span><strong>10:30 AM - 7:00 PM</strong></div>
+            </div>
+
+            <div class="hero-actions" style="margin-top:1.5rem;">
+              <a
+                class="btn btn-primary"
+                href="tel:+17185763804"
+                onclick="plausible('Call Click')"
+              >
+                Call Now
+              </a>
+
+              <a
+                class="btn btn-secondary"
+                href="https://www.google.com/maps/search/?api=1&query=230+Hoyt+Street+Brooklyn+NY+11217"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="plausible('Directions Click')"
+              >
+                Get Directions
+              </a>
+            </div>
+          </div>
+
+          <div class="map-wrap">
+            <iframe
+              title="Map to El Mexicano Restaurant & Cafe 5"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=230+Hoyt+Street+Brooklyn+NY+11217&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container final-grid">
+        <div class="final-cta card">
+          <div class="eyebrow">Final CTA</div>
+          <h2>Hungry now? Order, call, or stop by today.</h2>
+          <p>
+            A better restaurant website should do one thing extremely well:
+            turn attention into action. This layout keeps that front and center
+            on every screen size.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              class="btn btn-primary"
+              href="tel:+17185763804"
+              onclick="plausible('Call Click')"
+            >
+              Call Now
+            </a>
+
+            <a
+              class="btn btn-secondary"
+              href="https://www.ubereats.com/store/el-mexicano-restaurant-%26-cafe-5/qZaVLWZ9UqWVvAwE2YwlEg"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="plausible('Order Click')"
+            >
+              Order Online
+            </a>
+
+            <a
+              class="btn btn-secondary"
+              href="#menu"
+              onclick="plausible('Menu View')"
+            >
+              View Menu
+            </a>
+          </div>
+        </div>
+
+        <div class="about-card card" style="display:flex;flex-direction:column;justify-content:center;">
+          <h3>Why this works</h3>
+          <p>
+            The site gives El Mexicano a more premium digital presence than a
+            marketplace-only listing. It helps direct traffic into calls, map visits,
+            and online orders while giving the business a brand identity customers
+            remember.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© El Mexicano Restaurant & Cafe 5</div>
+      <div>Built for calls, directions, and online orders.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
