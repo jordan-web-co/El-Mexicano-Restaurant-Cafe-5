@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>El Mexicano Restaurant & Cafe 5 | Brooklyn, NY</title>
-  <meta name="description" content="Authentic Mexican favorites in Brooklyn. Tacos, burritos, breakfast platters, aguas frescas, and more at El Mexicano Restaurant & Cafe 5." />
+  <title>El mexicano restaurante &cafe 5 | Brooklyn, NY</title>
+  <meta
+    name="description"
+    content="Authentic Mexican favorites in Brooklyn. Tacos, burritos, enchiladas, guacamole, breakfast platters, and more from El mexicano restaurante &cafe 5."
+  />
   <script defer data-domain="CLIENTDOMAIN.com" src="https://plausible.io/js/script.js"></script>
   <style>
     :root {
@@ -26,9 +29,7 @@
 
     * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -179,7 +180,7 @@
       font-size: clamp(2.9rem, 7vw, 5.8rem);
       line-height: 0.95;
       letter-spacing: -0.06em;
-      max-width: 11ch;
+      max-width: 12ch;
     }
 
     .hero-copy p {
@@ -250,7 +251,7 @@
       box-shadow: var(--shadow);
       background:
         linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.6)),
-        url('https://images.unsplash.com/photo-1565299585323-38174c4a6471?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+        url('https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
       display: flex;
       align-items: flex-end;
       border: 1px solid rgba(255,255,255,0.08);
@@ -299,7 +300,8 @@
 
     .about-grid,
     .contact-grid,
-    .final-grid {
+    .final-grid,
+    .menu-cats-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
@@ -538,8 +540,8 @@
       .about-grid,
       .contact-grid,
       .final-grid,
-      .feature-grid,
-      .reviews-grid {
+      .reviews-grid,
+      .menu-cats-grid {
         grid-template-columns: 1fr 1fr;
       }
 
@@ -573,7 +575,8 @@
       .reviews-grid,
       .feature-grid,
       .gallery-grid,
-      .hero-stats {
+      .hero-stats,
+      .menu-cats-grid {
         grid-template-columns: 1fr;
       }
 
@@ -606,14 +609,15 @@
       <a href="#top" class="brand">
         <div class="brand-badge">EM</div>
         <div class="brand-text">
-          El Mexicano
-          <span>Restaurant & Cafe 5</span>
+          El mexicano
+          <span>restaurante &amp;cafe 5</span>
         </div>
       </a>
 
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#menu">Featured</a>
+        <a href="#categories">Categories</a>
         <a href="#gallery">Gallery</a>
         <a href="#reviews">Reviews</a>
         <a href="#location">Location</a>
@@ -621,10 +625,12 @@
 
       <a
         class="nav-cta"
-        href="tel:+17185763804"
-        onclick="plausible('Call Click')"
+        href="https://www.doordash.com/store/el-mexicano-restaurante-%26cafe-5-brooklyn-24536301/18394556/?delivery=true&src=yp&utm_source_id=bca551e5-37d8-43ea-b30a-740cd3ff1348"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="plausible('Order Click')"
       >
-        Call Now
+        Order Online
       </a>
     </div>
   </header>
@@ -633,21 +639,23 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow">Brooklyn Mexican Favorites</div>
-          <h1>Bold flavor, real comfort, neighborhood feel.</h1>
+          <div class="eyebrow">Brooklyn Mexican Delivery Favorite</div>
+          <h1>Brooklyn Mexican favorites, ready for pickup, delivery, or a quick bite.</h1>
           <p>
-            From tacos and burritos to breakfast platters and aguas frescas,
-            El Mexicano Restaurant & Cafe 5 brings authentic, satisfying Mexican
-            favorites to Hoyt Street with the kind of food people come back for.
+            Authentic Mexican favorites in Brooklyn, from tacos and burritos to enchiladas,
+            guacamole, breakfast plates, and more. Built to turn hungry visitors into fast
+            orders, calls, and walk-ins.
           </p>
 
           <div class="hero-actions">
             <a
               class="btn btn-primary"
-              href="tel:+17185763804"
-              onclick="plausible('Call Click')"
+              href="https://www.doordash.com/store/el-mexicano-restaurante-%26cafe-5-brooklyn-24536301/18394556/?delivery=true&src=yp&utm_source_id=bca551e5-37d8-43ea-b30a-740cd3ff1348"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="plausible('Order Click')"
             >
-              Call Now
+              Order Online
             </a>
 
             <a
@@ -662,45 +670,43 @@
 
             <a
               class="btn btn-secondary"
-              href="https://www.ubereats.com/store/el-mexicano-restaurant-%26-cafe-5/qZaVLWZ9UqWVvAwE2YwlEg"
-              target="_blank"
-              rel="noopener noreferrer"
-              onclick="plausible('Order Click')"
-            >
-              Order Online
-            </a>
-
-            <a
-              class="btn btn-secondary"
               href="#menu"
               onclick="plausible('Menu View')"
             >
               View Menu
             </a>
+
+            <a
+              class="btn btn-secondary"
+              href="#location"
+              onclick="plausible('Call Click')"
+            >
+              Visit Today
+            </a>
           </div>
 
           <div class="hero-meta">
-            <div class="pill">230 Hoyt Street, Brooklyn, NY 11217</div>
-            <div class="pill">Open daily</div>
-            <div class="pill">4.8-rated delivery listing</div>
+            <div class="pill">Brooklyn, NY</div>
+            <div class="pill">Mexican</div>
+            <div class="pill">Open 10:00 AM - 9:10 PM</div>
           </div>
         </div>
 
         <div class="hero-card">
           <div class="hero-card-content">
-            <div class="eyebrow">Popular Picks</div>
+            <div class="eyebrow">Featured on DoorDash</div>
             <div class="hero-stats">
               <div class="stat">
-                <strong>Taco Al Mexicano</strong>
-                <span>Neighborhood favorite</span>
+                <strong>4.7★ Rated</strong>
+                <span>100+ ratings</span>
               </div>
               <div class="stat">
-                <strong>Burrito al Mexicano</strong>
-                <span>Hearty, classic, satisfying</span>
+                <strong>Enchiladas</strong>
+                <span>#1 most liked</span>
               </div>
               <div class="stat">
-                <strong>Aguas Frescas</strong>
-                <span>Fresh and refreshing</span>
+                <strong>Taco</strong>
+                <span>#2 most liked</span>
               </div>
             </div>
           </div>
@@ -712,32 +718,30 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">About</div>
-          <h2>A local spot for everyday cravings and comfort classics.</h2>
+          <h2>A neighborhood Mexican spot with the kind of menu people keep coming back for.</h2>
           <p>
-            Designed to feel warm, approachable, and easy to order from, this
-            landing page puts the focus on what matters most: the food, the
-            convenience, and getting hungry customers to call, visit, or order.
+            This version of the site is designed around what customers are already seeing on
+            delivery apps: standout favorites, fast ordering, and a fuller view of the menu
+            that makes the restaurant feel established and worth choosing.
           </p>
         </div>
 
         <div class="about-grid">
           <div class="about-card card">
-            <h3>Authentic flavor with an easy everyday feel</h3>
+            <h3>Delivery-first, but still full of character</h3>
             <p>
-              El Mexicano Restaurant & Cafe 5 feels like the kind of neighborhood
-              place people rely on for tacos, breakfast, plates, and quick comfort
-              food. The website leans into that with a modern look that still feels
-              grounded, familiar, and local.
+              Instead of looking like a generic listing page, this homepage gives El mexicano
+              restaurante &amp;cafe 5 a stronger brand presence while keeping the experience
+              focused on convenience, cravings, and easy conversion.
             </p>
           </div>
 
           <div class="about-card card">
-            <h3>Built to convert visitors into orders</h3>
+            <h3>Built to turn traffic into orders</h3>
             <p>
-              The structure is designed around action: clear ordering buttons,
-              menu highlights, real-world hours, a strong location section, and
-              mobile-friendly calls-to-action that make it simple for customers to
-              decide fast.
+              The layout pushes the actions that matter most: viewing popular items, getting
+              directions, and ordering online quickly from mobile without digging through third-party
+              menus first.
             </p>
           </div>
         </div>
@@ -748,47 +752,78 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">Featured Offerings</div>
-          <h2>Customer favorites worth putting front and center.</h2>
+          <h2>Popular items customers are already ordering.</h2>
           <p>
-            These highlights are based on the restaurant’s public delivery/menu listings
-            and presented in a format that feels premium and easy to scan.
+            This section mirrors the current DoorDash listing so the website reflects what
+            people are actively seeing and buying right now.
           </p>
         </div>
 
         <div class="feature-grid">
           <div class="feature-card">
+            <div class="tag">Most Liked</div>
+            <h3>Enchiladas</h3>
+            <p>One of the strongest featured items and currently marked as the #1 most liked item.</p>
+            <div class="price">$15.99</div>
+          </div>
+
+          <div class="feature-card">
             <div class="tag">Popular</div>
-            <h3>Grilled Chicken Breast</h3>
-            <p>Simple, filling, and one of the most-liked menu items.</p>
-            <div class="price">From $14.00</div>
+            <h3>Taco</h3>
+            <p>A simple, high-converting menu item that works well as an easy first order.</p>
+            <div class="price">$3.99</div>
           </div>
 
           <div class="feature-card">
-            <div class="tag">Best Seller</div>
-            <h3>Burrito al Mexicano</h3>
-            <p>A hearty favorite that’s easy to feature for lunch and dinner traffic.</p>
-            <div class="price">From $13.00</div>
+            <div class="tag">Customer Favorite</div>
+            <h3>Burrito Al Mexicano</h3>
+            <p>A strong signature item that feels perfect for hero placement on the site.</p>
+            <div class="price">$13.00</div>
           </div>
 
           <div class="feature-card">
-            <div class="tag">Top Tacos</div>
-            <h3>Taco Al Mexicano</h3>
-            <p>Three-piece taco favorite that deserves hero placement.</p>
-            <div class="price">From $13.99</div>
+            <div class="tag">Top 3</div>
+            <h3>Guacamole &amp; Chips</h3>
+            <p>Great visual item and a strong add-on to help increase average order value.</p>
+            <div class="price">$10.99</div>
           </div>
 
           <div class="feature-card">
             <div class="tag">Classic</div>
-            <h3>Huaraches</h3>
-            <p>Traditional, eye-catching, and a great item for food photography.</p>
-            <div class="price">From $6.99</div>
+            <h3>Nachos</h3>
+            <p>A familiar, crowd-pleasing option that gives the homepage broad appeal.</p>
+            <div class="price">$14.00</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Menu Categories</div>
+          <h2>A broader menu than most delivery pages show at a glance.</h2>
+          <p>
+            Highlighting range makes the restaurant feel more complete, more established,
+            and more worth visiting in person too.
+          </p>
+        </div>
+
+        <div class="menu-cats-grid">
+          <div class="about-card card">
+            <h3>Mexican favorites</h3>
+            <p>
+              Antojitos Mexicanos, platters, bistecs, and classic menu staples give the
+              restaurant a fuller dine-in and takeout identity beyond just a few best sellers.
+            </p>
           </div>
 
-          <div class="feature-card">
-            <div class="tag">Fresh</div>
-            <h3>Aguas Frescas</h3>
-            <p>Perfect add-on item to increase average order value and visual appeal.</p>
-            <div class="price">From $4.00</div>
+          <div class="about-card card">
+            <h3>Breakfast to dessert</h3>
+            <p>
+              With desayuno, vegetable options, salads, desserts, and even American fast
+              food items, the menu has range that should be visible on the homepage.
+            </p>
           </div>
         </div>
       </div>
@@ -798,37 +833,37 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">Gallery</div>
-          <h2>Food-forward visuals that make the craving immediate.</h2>
+          <h2>Food visuals that create instant craving.</h2>
           <p>
-            A restaurant site should feel delicious in seconds. This gallery layout is
-            built to showcase tacos, plates, drinks, and atmosphere in a more premium way.
+            A high-converting restaurant page should make people hungry in seconds. This
+            gallery structure is built for tacos, burritos, platters, drinks, and comfort food.
           </p>
         </div>
 
         <div class="gallery-grid">
           <div class="gallery-item">
             <img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=1200&q=80" alt="Mexican taco platter" />
-            <div class="overlay">Signature tacos and plates</div>
+            <div class="overlay">Signature tacos and street-style favorites</div>
           </div>
 
           <div class="gallery-item">
             <img src="https://images.unsplash.com/photo-1600335895229-6e75511892c8?auto=format&fit=crop&w=900&q=80" alt="Burrito and salsa" />
-            <div class="overlay">Fresh, colorful ingredients</div>
+            <div class="overlay">Loaded burritos and big flavors</div>
           </div>
 
           <div class="gallery-item">
             <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=900&q=80" alt="Mexican breakfast plate" />
-            <div class="overlay">Breakfast favorites</div>
+            <div class="overlay">Breakfast plates and comfort classics</div>
           </div>
 
           <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=80" alt="Aguas frescas drinks" />
-            <div class="overlay">Refreshing drinks and extras</div>
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=80" alt="Fresh drinks" />
+            <div class="overlay">Drinks, sides, and add-ons</div>
           </div>
 
           <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=900&q=80" alt="Restaurant dining ambiance" />
-            <div class="overlay">Warm neighborhood energy</div>
+            <img src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=900&q=80" alt="Restaurant interior ambiance" />
+            <div class="overlay">Warm local energy with fast ordering</div>
           </div>
         </div>
       </div>
@@ -838,30 +873,30 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">Social Proof</div>
-          <h2>Real praise helps hungry customers decide faster.</h2>
+          <h2>Feedback that helps new customers feel confident ordering.</h2>
           <p>
-            These review snippets are adapted from public delivery listing feedback and
-            help give the site credibility right away.
+            Strong delivery reviews help remove hesitation fast and make a first order
+            feel like an easy decision.
           </p>
         </div>
 
         <div class="reviews-grid">
           <div class="review-card card">
             <div class="stars">★★★★★</div>
-            <p>Fresh, well-packaged, tasty. My go-to in Brooklyn.</p>
-            <strong>— Recent customer review</strong>
+            <p>“Super yummy birria tacos and beef tostadas. My favorites. I also love their horchata. Consistently great food!”</p>
+            <strong>— DoorDash customer</strong>
           </div>
 
           <div class="review-card card">
             <div class="stars">★★★★★</div>
-            <p>Everything is beautifully packaged and fresh.</p>
-            <strong>— Delivery customer</strong>
+            <p>“This pollo asada is really good.”</p>
+            <strong>— Recent DoorDash customer</strong>
           </div>
 
           <div class="review-card card">
             <div class="stars">★★★★★</div>
-            <p>Best tacos I’ve ever had — amazing taste and value.</p>
-            <strong>— Happy customer</strong>
+            <p>4.7 stars from 100+ ratings gives the restaurant a strong trust signal right away.</p>
+            <strong>— Delivery platform rating</strong>
           </div>
         </div>
       </div>
@@ -871,52 +906,58 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">Location & Contact</div>
-          <h2>Make it easy to visit, call, or order in one tap.</h2>
+          <h2>Make it easy to order, find, and visit.</h2>
           <p>
-            This section is designed to remove friction and capture intent right when
-            someone is ready to decide.
+            This section removes friction so customers can go from browsing to action
+            in one tap.
           </p>
         </div>
 
         <div class="contact-grid">
           <div class="contact-card card">
-            <h3 style="margin:0;font-size:1.55rem;letter-spacing:-0.03em;">Visit El Mexicano Restaurant & Cafe 5</h3>
+            <h3 style="margin:0;font-size:1.55rem;letter-spacing:-0.03em;">Visit El mexicano restaurante &amp;cafe 5</h3>
 
             <div class="contact-list">
               <div class="contact-item">
-                <span>Address</span>
-                <strong>230 Hoyt Street, Brooklyn, NY 11217</strong>
+                <span>Location</span>
+                <strong>Brooklyn, NY</strong>
               </div>
 
               <div class="contact-item">
-                <span>Phone</span>
-                <strong><a href="tel:+17185763804" onclick="plausible('Call Click')">(718) 576-3804</a></strong>
+                <span>Hours</span>
+                <strong>10:00 AM - 9:10 PM</strong>
               </div>
 
               <div class="contact-item">
                 <span>Order Online</span>
                 <strong>
-                  <a href="https://www.ubereats.com/store/el-mexicano-restaurant-%26-cafe-5/qZaVLWZ9UqWVvAwE2YwlEg" target="_blank" rel="noopener noreferrer" onclick="plausible('Order Click')">
-                    Open delivery page
+                  <a
+                    href="https://www.doordash.com/store/el-mexicano-restaurante-%26cafe-5-brooklyn-24536301/18394556/?delivery=true&src=yp&utm_source_id=bca551e5-37d8-43ea-b30a-740cd3ff1348"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onclick="plausible('Order Click')"
+                  >
+                    Open DoorDash Menu
                   </a>
                 </strong>
               </div>
             </div>
 
             <div class="hours">
-              <div class="hours-row"><span>Monday - Tuesday</span><strong>10:00 AM - 8:30 PM</strong></div>
-              <div class="hours-row"><span>Wednesday - Friday</span><strong>10:00 AM - 9:30 PM</strong></div>
-              <div class="hours-row"><span>Saturday</span><strong>10:30 AM - 9:30 PM</strong></div>
-              <div class="hours-row"><span>Sunday</span><strong>10:30 AM - 7:00 PM</strong></div>
+              <div class="hours-row"><span>Daily ordering window</span><strong>10:00 AM - 9:10 PM</strong></div>
+              <div class="hours-row"><span>Service options</span><strong>Delivery • Pickup • Group Order</strong></div>
+              <div class="hours-row"><span>Category</span><strong>Mexican</strong></div>
             </div>
 
             <div class="hero-actions" style="margin-top:1.5rem;">
               <a
                 class="btn btn-primary"
-                href="tel:+17185763804"
-                onclick="plausible('Call Click')"
+                href="https://www.doordash.com/store/el-mexicano-restaurante-%26cafe-5-brooklyn-24536301/18394556/?delivery=true&src=yp&utm_source_id=bca551e5-37d8-43ea-b30a-740cd3ff1348"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="plausible('Order Click')"
               >
-                Call Now
+                Order Online
               </a>
 
               <a
@@ -933,7 +974,7 @@
 
           <div class="map-wrap">
             <iframe
-              title="Map to El Mexicano Restaurant & Cafe 5"
+              title="Map to El mexicano restaurante &cafe 5"
               loading="lazy"
               allowfullscreen
               referrerpolicy="no-referrer-when-downgrade"
@@ -948,25 +989,16 @@
       <div class="container final-grid">
         <div class="final-cta card">
           <div class="eyebrow">Final CTA</div>
-          <h2>Hungry now? Order, call, or stop by today.</h2>
+          <h2>Craving tacos, burritos, or enchiladas?</h2>
           <p>
-            A better restaurant website should do one thing extremely well:
-            turn attention into action. This layout keeps that front and center
-            on every screen size.
+            Give customers one polished place to discover the restaurant, trust the brand,
+            and place an order fast from any device.
           </p>
 
           <div class="hero-actions">
             <a
               class="btn btn-primary"
-              href="tel:+17185763804"
-              onclick="plausible('Call Click')"
-            >
-              Call Now
-            </a>
-
-            <a
-              class="btn btn-secondary"
-              href="https://www.ubereats.com/store/el-mexicano-restaurant-%26-cafe-5/qZaVLWZ9UqWVvAwE2YwlEg"
+              href="https://www.doordash.com/store/el-mexicano-restaurante-%26cafe-5-brooklyn-24536301/18394556/?delivery=true&src=yp&utm_source_id=bca551e5-37d8-43ea-b30a-740cd3ff1348"
               target="_blank"
               rel="noopener noreferrer"
               onclick="plausible('Order Click')"
@@ -981,16 +1013,25 @@
             >
               View Menu
             </a>
+
+            <a
+              class="btn btn-secondary"
+              href="https://www.google.com/maps/search/?api=1&query=230+Hoyt+Street+Brooklyn+NY+11217"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="plausible('Directions Click')"
+            >
+              Get Directions
+            </a>
           </div>
         </div>
 
         <div class="about-card card" style="display:flex;flex-direction:column;justify-content:center;">
-          <h3>Why this works</h3>
+          <h3>Why this version works better</h3>
           <p>
-            The site gives El Mexicano a more premium digital presence than a
-            marketplace-only listing. It helps direct traffic into calls, map visits,
-            and online orders while giving the business a brand identity customers
-            remember.
+            It matches the live ordering experience more closely, highlights the actual featured
+            items people are seeing now, and positions the business as more polished than a basic
+            marketplace listing alone.
           </p>
         </div>
       </div>
@@ -999,8 +1040,8 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <div>© El Mexicano Restaurant & Cafe 5</div>
-      <div>Built for calls, directions, and online orders.</div>
+      <div>© El mexicano restaurante &amp;cafe 5</div>
+      <div>Built for orders, directions, and fast mobile conversion.</div>
     </div>
   </footer>
 
